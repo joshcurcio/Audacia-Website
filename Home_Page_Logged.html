@@ -3,7 +3,6 @@
 	<head>
 		<title>Audacia</title>
 		<script src="controllers/HomePageLoggedController.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <link href="styles/homePageLoggedCSS.css" rel="stylesheet" type="text/css">
 	</head>
 	<body onload="openTab(event, 'Home')">
@@ -14,25 +13,6 @@
 			<li><a href="#" class="tablinks" onclick="openTab(event, 'Profile')">Profile</a></li>
 			<li><a href="#" class="tablinks" onclick="Logout()">Logout</a></li>
 		</ul>
-		<ul class="nav">
-			<li class="button-dropdown">
-				<a href="" class="dropdown-toggle">
-				</a>
-					<ul class="dropdown-menu">
-						<li>
-							<a href="">
-								Logout
-							</a>
-						</li>
-						<li>
-							<a onclick="editProfile();">
-								Edit Profile
-							</a>
-						</li>
-					</ul>
-			</li>
-		</ul>
-
 		<div id="Home" class="tabcontent">
 			<div id="Home_SubCategories">
 				<div id="First_Catergory" style="float: left;">
@@ -134,12 +114,8 @@
 						<span id="FollowingNumber">1294</span>
 						</p>
 				</div>
-				<div id="">
-					<input type="text" style="height:200px;">
-				</input>
-				</div>
 				<div id="Description">
-					</div>
+				</div>
 			</div>
 			<div id="SubtabDescription">
 				<ul class="tab">
@@ -147,7 +123,6 @@
 					<li><a href="#" class="tablinks" onclick="openTab(event, 'Posts')">Posts</a></li>
 					<li><a href="#" class="tablinks" onclick="openTab(event, 'MyPortfolio')">My Portfolio</a></li>
 					<li><a href="#" class="tablinks" onclick="openTab(event, 'Tagged')">Tagged</a></li>
-
 				</ul>
 				<div id="Pictures" class="tabcontent">
 					<h2>Pictures</h2>

@@ -144,8 +144,9 @@ ul.tab li a:focus, .active {
 }
 
 #Description {
-    height: 50px;
-    width: 200px;
+    height: 87px;
+    width: 400px;
+    float: right;
     border: 1px solid green;
 }
 
