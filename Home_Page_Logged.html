@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Audacia</title>
+		<script src="controllers/HomePageLoggedController.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link href="styles/homePageLoggedCSS.css" rel="stylesheet" type="text/css">
+	</head>
+	<body onload="openTab(event, 'Home')">
+		<ul class="tab">
+			<li><a href="#" class="tablinks" onclick="openTab(event, 'Home')">Home</a></li>
+			<li><a href="#" class="tablinks" onclick="openTab(event, 'Promoted')">Promoted</a></li>
+			<li><a href="#" class="tablinks" onclick="openTab(event, 'Recents')">Recents</a></li>
+			<li><a href="#" class="tablinks" onclick="openTab(event, 'Profile')">Profile</a></li>
+			<li><a href="#" class="tablinks" onclick="Logout()">Logout</a></li>
+		</ul>
+		<ul class="nav">
+			<li class="button-dropdown">
+				<a href="" class="dropdown-toggle">
+				</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="">
+								Logout
+							</a>
+						</li>
+						<li>
+							<a onclick="editProfile();">
+								Edit Profile
+							</a>
+						</li>
+					</ul>
+			</li>
+		</ul>
+
+		<div id="Home" class="tabcontent">
+			<div id="Home_SubCategories">
+				<div id="First_Catergory" style="float: left;">
+					<a href="">Photography
+					</a>
+				</div>
+				<div id="Second_Catergory" style="float: right;">
+					<a href="">Filming
+					</a>
+				</div>
+				<div id="Third_Catergory" style="float: right;">
+					<a href="">Acting
+					</a>
+				</div>
+			</div>
+			<div id="HomePictures">
+				<div id="HomePicProfile">
+					<image src="" width="10">
+					</image>
+					<image src="media\Profile_Image.png" width="38" height="38">
+					</image>
+				</div>
+				<div id="HomePhoto">
+					<image src="media\Filming_Pic.jpg" width="598" height="425">
+					</image>
+					</div>
+				<div id="Buttons">
+					<image src="" width="10">
+					</image>
+					<image src="media\Heart_Icon.png" width="25" height="25" onclcick="LikeButton ()">
+					</image>
+					<image src="" width="10" onclick="">
+					</image>
+					<image src="media\Promoted_Icon.jpg" width="29" height="29" onclick="Promot ()">
+					</image>
+					<image src="" width="10" height="10" align="right">
+					</image>
+					<div class="dropdown">
+						<span>
+						<image src="media\Home_Options.png" width="29" height="29" align="right" >
+						</image>
+					</span>
+						<div class="dropdown-content">
+							<div class="dropdown-Save" onclick="HomePictureSave ()">
+								Save
+							</div>
+							<div class="dropdown-Edit" onclick="HomePictureEdit ()">
+								Edit
+							</div>
+						</div>
+				</div>
+				</div>
+				<div id="HomeDescription">
+					</div>
+			</div>
+		</div>
+		<div id="Promoted" class="tabcontent">
+			<div id="Promoted_Search">
+				</div>
+			<input type="text" placeholder="Search">
+			</input>
+			<input type="button" value="Search" onlick="Search_submit ()">
+			</input>
+		</div>
+		<div id="Recents" class="tabcontent">
+			<h2>Recents</h2>
+			<p>This is the content of Recents page.</p>
+		</div>
+		<div id="Profile" class="tabcontent">
+			<h2>Profile</h2>
+			<div id="ProfilePage">
+				<div id="LeftCol">
+					<div id="Photo">
+						<image src="media\profile.png" width="200px" height="200px"></image>
+					</div>
+					<div id="ProfileName">
+						John Doe
+						</div>
+				</div>
+				<div id="Info">
+					<a onclick="editProfile()">
+						<image id="Settings" src="media\Setting.jpg" align="right" width="20px" height="20px">
+						</image>
+						</a>
+					<p id="Posts">
+						<strong>Posts</strong>
+						<span id="PostsNumber">89</span>
+						</p>
+					<p id="Mentors">
+						<strong>Mentors</strong>
+						<span id="MentorCount">4</span>
+						</p>
+					<p id="Followers">
+						<strong>Followers</strong>
+						<span id="FollowersNumber">459</span>
+						</p>
+					<p id="Following">
+						<strong>Following</strong>
+						<span id="FollowingNumber">1294</span>
+						</p>
+				</div>
+				<div id="">
+					<input type="text" style="height:200px;">
+				</input>
+				</div>
+				<div id="Description">
+					</div>
+			</div>
+			<div id="SubtabDescription">
+				<ul class="tab">
+					<li><a href="#" class="tablinks" onclick="openTab(event, 'Pictures')">Pictures</a></li>
+					<li><a href="#" class="tablinks" onclick="openTab(event, 'Posts')">Posts</a></li>
+					<li><a href="#" class="tablinks" onclick="openTab(event, 'MyPortfolio')">My Portfolio</a></li>
+					<li><a href="#" class="tablinks" onclick="openTab(event, 'Tagged')">Tagged</a></li>
+
+				</ul>
+				<div id="Pictures" class="tabcontent">
+					<h2>Pictures</h2>
+					<p> This is the Content of Pictures tab.</p>
+				</div>
+				<div id="Posts" class="tabcontent">
+					<p> This is the content of Posts tab.</p>
+				</div>
+				<div id="MyPortfolio" class="tabcontent" >
+					<p> This is the content of My Portfolio tab.</p>
+				</div>
+				<div id="Tagged" class="tabcontent">
+					<p> This is the content of My Portfolio tab.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
